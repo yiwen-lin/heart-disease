@@ -1,0 +1,382 @@
+@import url("http://fonts.googleapis.com/earlyaccess/notosanstc.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400");
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+a {
+  background-color: transparent;
+}
+
+a:active, a:hover, a:focus {
+  outline: 0;
+  text-decoration: none;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 0;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+}
+
+pre {
+  overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+body {
+  /* padding-top: 70px; */
+  font-size: 1.125rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 70px;
+}
+
+header nav {
+  color: #4F555C;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+header nav .navbar-nav a.nav-link {
+  color: #4F555C;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  font-size: 16px;
+}
+
+header nav .navbar-nav a.nav-link:hover {
+  color: #45b035;
+}
+
+header nav #main-logo {
+  float: left;
+  background: url(../images/img_logo.svg) no-repeat center/contain;
+  width: 85px;
+  height: 40px;
+  margin: 7px 15px 7px 0;
+  text-indent: -5000px;
+}
+
+header nav .navbar-brand {
+  margin-right: 0;
+  color: #4F555C;
+}
+
+header nav .dropdown-item {
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+header nav .dropdown-item:hover, header nav .dropdown-item:focus, header nav .dropdown-item:active {
+  color: #45b035;
+  background: #fff;
+}
+
+footer {
+  /* background-color: #F7F7F7; */
+  padding: 100px 0 50px;
+  text-align: center;
+  font-size: 0.875rem;
+}
+footer a {
+  color:#000;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+footer ul li {
+  display: inline-block;
+  margin: 0 15px 15px 0;
+  border-right: 1px solid #707070;
+  padding-right: 15px;
+  line-height: 1;
+  font-size: 1.125rem;
+}
+
+footer ul li:last-child {
+  border-right: none;
+  padding-right: 0;
+  margin-right: 0;
+}
+
+footer ul li a, footer ul li a:hover {
+  color: #4F555C;
+}
+
+.social-box {
+  display: flex;
+  align-items: center;
+  vertical-align: bottom;
+}
+.social-box a {
+  margin: 0 10px;
+  display: flex;
+  
+}
+.social-box a img {
+  height: 30px;
+}
+
+
+@media (max-width: 768px) {
+  body {
+    /* padding-top: 56px; */
+  }
+  header {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 56px;
+    z-index: 9999;
+  }
+  header nav {
+    color: #4F555C;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  header nav .navbar-nav a.nav-link {
+    color: #4F555C;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  header nav .navbar-nav a.nav-link:hover {
+    color: #45b035;
+  }
+  header nav .navbar-brand {
+    font-size: 0.875rem;
+  }
+  header nav .dropdown-menu {
+    border: none;
+  }
+  header nav .dropdown-menu .dropdown-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  header nav .dropdown-menu .dropdown-item:hover {
+    color: #45b035;
+    background: #fff;
+  }
+  header nav .navbar-toggler {
+    border-color: none;
+  }
+  header nav .navbar-toggler:focus {
+    outline: none;
+  }
+  header nav .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(13, 13, 13, 100)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  header nav #main-logo {
+    float: left;
+    background-image: url(../images/img_logo.svg));
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 62px;
+    height: 30px;
+    margin: 0;
+    text-indent: -5000px;
+  }
+  .social-box a {
+    margin: 0 26px 0 0; 
+    padding: 15px 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
