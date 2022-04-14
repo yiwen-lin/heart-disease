@@ -232,7 +232,7 @@ header nav .navbar-nav a.nav-link {
 }
 
 header nav .navbar-nav a.nav-link:hover {
-  color: #45b035;
+  color: #E94831;
 }
 
 header nav #main-logo {
@@ -256,7 +256,7 @@ header nav .dropdown-item {
 }
 
 header nav .dropdown-item:hover, header nav .dropdown-item:focus, header nav .dropdown-item:active {
-  color: #45b035;
+  color: #E94831;
   background: #fff;
 }
 
@@ -332,7 +332,7 @@ footer ul li a, footer ul li a:hover {
     padding-bottom: 15px;
   }
   header nav .navbar-nav a.nav-link:hover {
-    color: #45b035;
+    color: #E94831;
   }
   header nav .navbar-brand {
     font-size: 0.875rem;
@@ -345,7 +345,7 @@ footer ul li a, footer ul li a:hover {
     padding-bottom: 10px;
   }
   header nav .dropdown-menu .dropdown-item:hover {
-    color: #45b035;
+    color: #E94831;
     background: #fff;
   }
   header nav .navbar-toggler {

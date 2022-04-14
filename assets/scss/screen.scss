@@ -30,6 +30,7 @@ body {
 		overflow-y: scroll;
 	}
 }
+
 a {
 	text-decoration: none;
 	&:hover {
@@ -47,7 +48,7 @@ p {
 h2 {
 	color: $color;
 	font-size: 32px;
-	margin: 0 auto 20px;
+	margin: 0 auto 30px;
 	text-align: center;
 	@include mobile {
 		font-size: 28px;
@@ -56,7 +57,7 @@ h2 {
 }
 
 h3 {
-	font-size: 26px;
+	font-size: 24px;
 	font-weight: 300;
 	line-height: 1.5;
 	margin: 0;
@@ -69,13 +70,12 @@ h4 {
 	margin: 0;
 }
 
-
-
 h5 {
 	font-size: 16px;
 	display: inline-block;
 	margin-top: 25px;
 	font-weight: 300;
+	line-height: 1.5;
 	a {
 		border-bottom: 1px solid #666;
 		color: #666;
@@ -87,6 +87,22 @@ h5 {
 	}
 }
 
+section {
+	padding: 100px 0;
+	&.link-block {
+		padding: 0;
+	}
+	@include mobile {
+		padding: 70px 0;
+	}
+}
+
+img.title-icon {
+	width: 36px;
+    display: inline-block;
+    vertical-align: top;
+	margin-right: 15px;
+}
 .general-btn {
 	border-radius:10px;
 	border: 1px solid #000;
@@ -107,6 +123,10 @@ h5 {
 	@include mobile {
 		margin: 0 12px;
 	}
+}
+
+.text-center {
+	text-align:center;
 }
 @include mobile{
 	h3 {
@@ -612,237 +632,6 @@ h5 {
 	}
 }
 
-//----------------------------------------------
-// story-page-----------------------------------
-
-section {
-	padding: 100px 0;
-	&.link-block {
-		padding: 0;
-	}
-	&.s1-block {
-		padding-bottom: 70px;
-	}
-	&.s2-block,
-	&.s3-block {
-		padding: 70px 0;
-	}
-	@include mobile {
-		padding: 70px 0;
-		&.s1-block {
-			padding-bottom: 50px;
-		}
-		&.s2-block,
-		&.s3-block {
-			padding: 50px 0;
-		}
-	}
-}
-.story-page {
-	.op {
-		background-color: #FAFA8B;
-		padding: 100px 0 75px;
-		position: relative;
-		@include mobile {
-			// padding: 50px 0 70px;
-		}
-		.story-h1-img {
-			width: 50%;
-			display: inline-block;
-			@include mobile {
-				width: 90%;
-				padding: 0 0 38px 0;
-			}
-		}
-		.story-op-img {
-			width: 40%;
-			display: inline-block;
-			position: absolute;
-			right: 0;
-			bottom: -125px;
-			@include mobile {
-				width: 55%;
-				bottom: -100px;
-			}
-		}
-	}
-	.tab-content{
-		.active {
-			display: block;
-			opacity: 1;
-		}
-	}
-}
-
-// ----------s1.2.3----------
-.s1-block,.s2-block,.s3-block {
-	.info-block {
-		margin-top: 50px;
-		.info-title {
-			text-align: center;
-			font-size: 22px;
-			font-weight: 500;
-			margin-bottom: 20px;
-			@include mobile {
-				font-size: 20px;
-				line-height: 1.5;
-			}
-		}
-		h6 {
-			margin-top: 20px;
-			font-weight: 200;
-		}
-	}
-	.concatenate {
-		margin-top: 70px;
-		margin-bottom: 0;
-	}
-}
-
-.s1-img {
-	background-image: url(../images/form1.svg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 315px;
-	@include mobile {
-		background-image: url(../images/form1-mb.svg);
-		height: 364px;
-	}
-}
-.s2-img {
-	background-image: url(../images/form2.svg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 265px;
-	@include mobile {
-		background-image: url(../images/form2-mb.svg);
-		height: 310px;
-	}
-}
-.s3-img {
-	background-image: url(../images/form3.svg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 346px;
-	@include mobile {
-		background-image: url(../images/form3-mb.svg);
-		height: 396px;
-	}
-}
-
-// ----------story----------
-.story-block {
-	.story-title {
-		display: block;
-		height: 34px;
-		text-align: center;
-		margin: 0 auto 14px;
-		@include mobile {
-			height: 30px;
-			max-width: 100%;
-		}
-	}
-	.quote-row {
-		margin: 40px auto 60px;
-		display: flex;
-		align-items: center;
-		img {
-			width: 100%;
-		}
-		@include mobile {
-			margin: 0px auto 30px;
-		}
-	}
-	.quote {
-		font-weight: 200;
-		position: relative;
-		padding: 30px 40px;
-		@include mobile {
-			font-size: 24px;
-			padding: 30px 28px;
-		}
-		&::before {
-			content: "“";
-			display: inline-block;
-			position: absolute;
-			top: 0;
-			left: 15px;
-			font-size: 50px;
-			font-family: 'source-han-sans-traditional', sans-serif;
-			@include mobile {
-				left: 0;
-			}
-		}
-		&::after{
-			content: "”";
-			display: inline-block;
-			position: absolute;
-			right: 16px;
-			bottom: -20px;
-			font-size: 50px;
-			font-family: 'source-han-sans-traditional', sans-serif;
-			@include mobile {
-				right: 0;
-				bottom: -26px;
-			}
-		}
-	}
-	.video-block {
-		position: relative;
-		margin-top: 10px;
-		a {
-			color: white;
-			font-size: 22px;
-			font-weight: 500;
-			letter-spacing: 2px;
-			span {
-				font-size: 18px;
-				margin-left: 8px;
-			}
-		}
-	}
-	.link {
-		text-align: right;
-		margin-bottom: 25px;
-		a {
-			color: $color;
-			font-size: 16px;
-			text-align: right;
-			span {
-				font-size: 14px;
-				margin-left: 6px;
-			}
-		}
-	} 
-	.speaker {
-		@keyframes breathe {
-			0% {
-				opacity: 0;
-			}
-			50% {
-				opacity: 1;
-			}
-			100% {
-				opacity: 0;
-			}
-		}
-		img {
-			width: 20px;
-			margin-right: 10px;
-			margin-bottom: 5px;
-			animation: breathe 3s infinite ;
-		}
-		font-size: 16px;
-		color: $color;
-		cursor: pointer;
-		display: inline-block;
-	}
-}
-
-
 // ----------symptom feature ----------
 
 .symptom-block {
@@ -879,6 +668,9 @@ section {
 			}
 			.output {
 				margin-top: 20px;
+				.colors {
+					display: none;
+				}
 			}
 		}
 		.output-block-title {
@@ -956,5 +748,123 @@ section {
 }
 
 
+
+//----------------------------------------------
+// knowledge-page-----------------------------------
+.knowledge-page {
+	h2 {
+		color:$color-second;
+	}
+	.op {
+		background-color: $color-second-light;
+		padding: 100px 0 75px;
+		position: relative;
+		@include mobile {
+			// padding: 50px 0 70px;
+		}
+	}
+	.tab-content{
+		.active {
+			display: block;
+			opacity: 1;
+		}
+	}
+}
+
+section {
+	// &.s1-block {
+	// 	padding-bottom: 70px;
+	// }
+	// &.s2-block,
+	// &.s3-block {
+	// 	padding: 70px 0;
+	// }
+	@include mobile {
+		// &.s1-block {
+		// 	padding-bottom: 50px;
+		// }
+		// &.s2-block,
+		// &.s3-block {
+		// 	padding: 50px 0;
+		// }
+	}
+}
+
+
+// ----------s1.2.3----------
+.s1-block,.s2-block,.s3-block {
+	.info-block {
+		margin-top: 50px;
+		margin-bottom: 50px;
+		.info-title {
+			text-align: center;
+			font-size: 22px;
+			font-weight: 500;
+			margin-bottom: 30px;
+			@include mobile {
+				font-size: 20px;
+				line-height: 1.5;
+			}
+		}
+		h5 {
+			margin-top: 30px;
+			font-weight: 200;
+			display: block;
+		}
+	}
+	.concatenate {
+		margin-top: 70px;
+		margin-bottom: 0;
+	}
+}
+
+.s1-img {
+	background-image: url(/assets/images/chart1.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% auto ;
+	&:before {
+		content: "";
+		display: block;
+		padding-top: 62%;
+	}
+	@include mobile {
+		// background-image: url(../images/form1-mb.svg);
+		// height: 364px;
+	}
+}
+.s2-img1 {
+	background-image: url(/assets/images/chart2.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 70% auto ;
+	&:before {
+		content: "";
+		display: block;
+		padding-top: 56%;
+	}
+	@include mobile {
+
+	}
+}
+.s2-img2 {
+	background-image: url(/assets/images/chart3.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 70% auto ;
+	&:before {
+		content: "";
+		display: block;
+		padding-top: 56%;
+	}
+	@include mobile {
+
+	}
+}
+
+// ---------- disease ----------
 
 

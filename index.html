@@ -25,8 +25,6 @@
 
   <!-- 樣式css -->
   <link rel="stylesheet" href="assets/css/screen.min.css">
-  <!-- 下拉選單 -->
-  <!-- <link rel="stylesheet" href="assets/css/label.css"> -->
 
   <!-- adobefont -->
   <script>
@@ -214,8 +212,8 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-6 offset-md-3">
-          <h2>全台特色醫療團隊</h2>
-          <p>康健嚴選全台100+復健院所，挑對醫生，當個聰明病人！</p>
+          <h2><img class="title-icon" src="assets/images/icon.svg" alt="">全台特色醫療團隊</h2>
+          <p class="text-center">康健嚴選全台100+復健院所，挑對醫生，當個聰明病人！</p>
         </div>
       </div>
 
@@ -337,14 +335,14 @@
               <div class="option-group">
                 <div class="button dropdown">
                   <select id="colorselector2">
-                    <option value="red">內外科：主動脈瓣膜支架置放</option>
-                    <option value="yellow">外科：主動脈瓣置換、二尖脈瓣置換手術、脈辦修補</option>
+                    <option value="red2">內外科：主動脈瓣膜支架置放</option>
+                    <option value="yellow2">外科：主動脈瓣置換、二尖脈瓣置換手術、脈辦修補</option>
                   </select>
                 </div>
                 <div class="output">
                   <div class="output-block-title">特色醫院：</div>
                   <!-- 下拉選單 內容1 內外科：主動脈瓣膜支架置放 -->
-                  <div id="red" class="colors red">
+                  <div id="red2" class="colors red">
 
                     <div class="row item">
                       <div class="col-md-6">
@@ -393,7 +391,7 @@
 
                   </div>
                   <!-- 下拉選單 內容2 外科：主動脈瓣置換、二尖脈瓣置換手術、脈辦修補-->
-                  <div id="yellow" class="colors yellow">
+                  <div id="yellow2" class="colors yellow">
 
                     <div class="row item">
                       <div class="col-md-6">
@@ -509,14 +507,14 @@
               <div class="option-group">
                 <div class="button dropdown">
                   <select id="colorselector3">
-                    <option value="red">電燒</option>
-                    <option value="yellow">ICD去顫器、節律器</option>
+                    <option value="red3">電燒</option>
+                    <option value="yellow3">ICD去顫器、節律器</option>
                   </select>
                 </div>
                 <div class="output">
                   <div class="output-block-title">特色醫院：</div>
                   <!-- 下拉選單 內容1 -->
-                  <div id="red" class="colors red">
+                  <div id="red3" class="colors red">
 
                     <div class="row item">
                       <div class="col-md-6">
@@ -543,7 +541,7 @@
 
                   </div>
                   <!-- 下拉選單 內容2 -->
-                  <div id="yellow" class="colors yellow">
+                  <div id="yellow3" class="colors yellow">
 
                     <div class="row item">
                       <div class="col-md-6">
@@ -601,7 +599,7 @@
     data-label="section-test-5">
     <div class="container">
       <div class="col-12 col-md-8 offset-md-2">
-        <h2>找全台心血管疾病醫院</h2>
+        <h2><img class="title-icon" src="assets/images/icon.svg" alt="">找全台心血管疾病醫院</h2>
         <p>康健嚴選全台100+復健院所，挑對醫生，當個聰明病人！</p>
       </div>
       <select name="select_city" id="city" class="col-12 col-md-2">
@@ -692,15 +690,25 @@
   <script src="assets/js/hospital.js"></script>
 
   <script>
+
+
+
+
+
     $(function () {
+      $('#red').show();
       $('#colorselector').change(function () {
         $('.colors').hide();
         $('#' + $(this).val()).show();
       });
+
+      $('#red2').show();
       $('#colorselector2').change(function () {
         $('.colors').hide();
         $('#' + $(this).val()).show();
       });
+
+      $('#red3').show();
       $('#colorselector3').change(function () {
         $('.colors').hide();
         $('#' + $(this).val()).show();
