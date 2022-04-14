@@ -26,7 +26,7 @@
   <!-- 樣式css -->
   <link rel="stylesheet" href="assets/css/screen.min.css">
   <!-- 下拉選單 -->
-  <link rel="stylesheet" href="assets/css/label.css">
+  <!-- <link rel="stylesheet" href="assets/css/label.css"> -->
 
   <!-- adobefont -->
   <script>
@@ -136,7 +136,7 @@
       <div class="row">
 
 
-        <div class="op-text col-12 col-md-4">
+        <div class="op-text col-12 col-md-4 offset-md-4">
           <h4>2021情緒就醫指南</h4>
           <h1><img src="images/op-title.svg" alt=""></h1>
           <p>掉入情緒泥淖中，你永遠不是孤單一人，走在療癒路上，我們陪你一起認識更完整的自己。</p>
@@ -171,7 +171,7 @@
         <div class="row">
           <div class="txt-block col-12 col-md-8 offset-md-2">
             <h3>您的症狀可能為以下結果：</h3>
-            <p>此為預測結果，正確診斷仍須接受醫師的問診與檢查</p>
+            <p>此為預測結果，正確診斷仍須接受醫師的問診檢查</p>
           </div>
           <div class="disease-block">
             <div class="result-circle">
@@ -196,8 +196,10 @@
 
           <div class="btn-block">
             <h5><a href="" class="pre-btn">再測一次</a></h5>
-            <div class="general-btn smooth-scroll"><a href="#feature">找醫院團隊</a></div>
-            <div class="general-btn"><a href="knowledge.html">認識疾病</a></div>
+            <div class="general-btn-block">
+              <div class="general-btn smooth-scroll"><a href="#feature" class="smooth-scroll">找醫院團隊</a></div>
+              <div class="general-btn"><a href="knowledge.html">認識疾病</a></div>
+            </div>
           </div>
 
         </div>
@@ -221,11 +223,14 @@
         <div class="col-12 col-md-10 offset-md-1">
           <ul class="nav nav-pills" role="tablist">
             <li><a class="active" data-toggle="pill" href="#home" role="tab" aria-controls="home" aria-selected="true"
-                data-category="web_web" data-action="2021mental-health" data-label="click-story-disease-1">冠狀動脈心臟病</a></li>
+                data-category="web_web" data-action="2021mental-health" data-label="click-story-disease-1">冠狀動脈心臟病</a>
+            </li>
             <li><a data-toggle="pill" href="#menu1" role="tab" aria-controls="menu1" aria-selected="false"
-                data-category="web_web" data-action="2021mental-health" data-label="click-story-disease-2">瓣膜性心臟病</a></li>
+                data-category="web_web" data-action="2021mental-health" data-label="click-story-disease-2">瓣膜性心臟病</a>
+            </li>
             <li><a data-toggle="pill" href="#menu2" role="tab" aria-controls="menu2" aria-selected="false"
-                data-category="web_web" data-action="2021mental-health" data-label="click-story-disease-3">主動脈疾病</a></li>
+                data-category="web_web" data-action="2021mental-health" data-label="click-story-disease-3">主動脈疾病</a>
+            </li>
             <li><a data-toggle="pill" href="#menu3" role="tab" aria-controls="menu3" aria-selected="false"
                 data-category="web_web" data-action="2021mental-health" data-label="click-story-disease-4">周邊動脈</a></li>
             <li><a data-toggle="pill" href="#menu4" role="tab" aria-controls="menu4" aria-selected="false"
@@ -233,6 +238,7 @@
           </ul>
 
           <div class="tab-content">
+            <!-- tab1 -->
             <div id="home" class="tab-pane fade in active">
               <!-- 下拉選單 -->
               <div class="option-group">
@@ -243,10 +249,10 @@
                   </select>
                 </div>
                 <div class="output">
-                  <!-- 下拉選單 內容1 -->
+                  <div class="output-block-title">特色醫院：</div>
+                  <!-- 下拉選單 內容1 內科：冠狀動脈支架置放-->
                   <div id="red" class="colors red">
 
-                    <div class="output-block-title">特色醫院：</div>
                     <div class="row item">
                       <div class="col-md-6">
                         <img src="assets/images/test.jpg" alt="">
@@ -282,10 +288,9 @@
                     </div>
 
                   </div>
-                  <!-- 下拉選單 內容2 -->
+                  <!-- 下拉選單 內容2 外科：冠狀動脈繞道手術 -->
                   <div id="yellow" class="colors yellow">
 
-                    <div class="output-block-title">特色醫院：</div>
                     <div class="row item">
                       <div class="col-md-6">
                         <img src="assets/images/test.jpg" alt="">
@@ -326,28 +331,101 @@
 
             </div>
 
+            <!-- tab2 -->
             <div id="menu1" class="tab-pane fade">
               <!-- 下拉選單 -->
               <div class="option-group">
                 <div class="button dropdown">
                   <select id="colorselector2">
-                    <option value="red1">內科：冠狀動脈支架置放</option>
-                    <option value="yellow2">外科：冠狀動脈繞道手術</option>
+                    <option value="red">內外科：主動脈瓣膜支架置放</option>
+                    <option value="yellow">外科：主動脈瓣置換、二尖脈瓣置換手術、脈辦修補</option>
                   </select>
                 </div>
                 <div class="output">
-                  <div id="red1" class="colors red">
-                    <h3>內科：冠狀動脈支架置放</h3>
-                  </div>
-                  <div id="yellow2" class="colors yellow">
-                    <h3>外科：冠狀動脈繞道手術</h3>
-                  </div>
+                  <div class="output-block-title">特色醫院：</div>
+                  <!-- 下拉選單 內容1 內外科：主動脈瓣膜支架置放 -->
+                  <div id="red" class="colors red">
 
+                    <div class="row item">
+                      <div class="col-md-6">
+                        <img src="assets/images/test.jpg" alt="">
+                      </div>
+                      <div class="col-md-6">
+                        <p class="name">台大醫院</p>
+                        <h4>標題標題標題標題標題標題標題標題</h4>
+                        <p>說明文字說明文字，說明文字說明文字，說明文字說明文字，說明文字說明文字，說明文字說明文字。</p>
+                        <h5><a href="" class="pre-btn">看更多</a></h5>
+                      </div>
+                    </div>
+                    <div class="row item">
+                      <div class="col-md-6">
+                        <img src="assets/images/test.jpg" alt="">
+                      </div>
+                      <div class="col-md-6">
+                        <p class="name">台中榮民總醫院</p>
+                        <h4>標題標題標題標題標題標題標題標題</h4>
+                        <p>說明文字說明文字，說明文字說明文字，說明文字說明文字，說明文字說明文字，說明文字說明文字。</p>
+                        <h5><a href="" class="pre-btn">看更多</a></h5>
+                      </div>
+                    </div>
+                    <div class="row item">
+                      <div class="col-md-6">
+                        <img src="assets/images/test.jpg" alt="">
+                      </div>
+                      <div class="col-md-6">
+                        <p class="name">台北榮民總醫院</p>
+                        <h4>標題標題標題標題標題標題標題標題</h4>
+                        <p>說明文字說明文字，說明文字說明文字，說明文字說明文字，說明文字說明文字，說明文字說明文字。</p>
+                        <h5><a href="" class="pre-btn">看更多</a></h5>
+                      </div>
+                    </div>
+                    <div class="row item">
+                      <div class="col-md-6">
+                        <img src="assets/images/test.jpg" alt="">
+                      </div>
+                      <div class="col-md-6">
+                        <p class="name">振興醫院</p>
+                        <h4>標題標題標題標題標題標題標題標題</h4>
+                        <p>說明文字說明文字，說明文字說明文字，說明文字說明文字，說明文字說明文字，說明文字說明文字。</p>
+                        <h5><a href="" class="pre-btn">看更多</a></h5>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- 下拉選單 內容2 外科：主動脈瓣置換、二尖脈瓣置換手術、脈辦修補-->
+                  <div id="yellow" class="colors yellow">
+
+                    <div class="row item">
+                      <div class="col-md-6">
+                        <img src="assets/images/test.jpg" alt="">
+                      </div>
+                      <div class="col-md-6">
+                        <p class="name">亞東醫院</p>
+                        <h4>標題標題標題標題標題標題標題標題</h4>
+                        <p>說明文字說明文字，說明文字說明文字，說明文字說明文字，說明文字說明文字，說明文字說明文字。</p>
+                        <h5><a href="" class="pre-btn">看更多</a></h5>
+                      </div>
+                    </div>
+                    <div class="row item">
+                      <div class="col-md-6">
+                        <img src="assets/images/test.jpg" alt="">
+                      </div>
+                      <div class="col-md-6">
+                        <p class="name">高雄榮民總醫院</p>
+                        <h4>標題標題標題標題標題標題標題標題</h4>
+                        <p>說明文字說明文字，說明文字說明文字，說明文字說明文字，說明文字說明文字，說明文字說明文字。</p>
+                        <h5><a href="" class="pre-btn">看更多</a></h5>
+                      </div>
+                    </div>
+
+                  </div>
                 </div>
               </div>
 
 
             </div>
+
+            <!-- tab3 -->
             <div id="menu2" class="tab-pane fade">
               <h4>外科：主動脈手術</h4>
               <div class="output-block-title">特色醫院：</div>
@@ -386,6 +464,7 @@
               </div>
             </div>
 
+            <!-- tab4 -->
             <div id="menu3" class="tab-pane fade">
               <h4>單純性、複雜性周邊動脈氣球擴張或支架置放</h4>
               <div class="output-block-title">特色醫院：</div>
@@ -424,8 +503,74 @@
               </div>
             </div>
 
+            <!-- tab5 -->
             <div id="menu4" class="tab-pane fade">
+              <!-- 下拉選單 -->
+              <div class="option-group">
+                <div class="button dropdown">
+                  <select id="colorselector3">
+                    <option value="red">電燒</option>
+                    <option value="yellow">ICD去顫器、節律器</option>
+                  </select>
+                </div>
+                <div class="output">
+                  <div class="output-block-title">特色醫院：</div>
+                  <!-- 下拉選單 內容1 -->
+                  <div id="red" class="colors red">
 
+                    <div class="row item">
+                      <div class="col-md-6">
+                        <img src="assets/images/test.jpg" alt="">
+                      </div>
+                      <div class="col-md-6">
+                        <p class="name">台北榮民總醫院</p>
+                        <h4>標題標題標題標題標題標題標題標題</h4>
+                        <p>說明文字說明文字，說明文字說明文字，說明文字說明文字，說明文字說明文字，說明文字說明文字。</p>
+                        <h5><a href="" class="pre-btn">看更多</a></h5>
+                      </div>
+                    </div>
+                    <div class="row item">
+                      <div class="col-md-6">
+                        <img src="assets/images/test.jpg" alt="">
+                      </div>
+                      <div class="col-md-6">
+                        <p class="name">林口長庚醫院</p>
+                        <h4>標題標題標題標題標題標題標題標題</h4>
+                        <p>說明文字說明文字，說明文字說明文字，說明文字說明文字，說明文字說明文字，說明文字說明文字。</p>
+                        <h5><a href="" class="pre-btn">看更多</a></h5>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- 下拉選單 內容2 -->
+                  <div id="yellow" class="colors yellow">
+
+                    <div class="row item">
+                      <div class="col-md-6">
+                        <img src="assets/images/test.jpg" alt="">
+                      </div>
+                      <div class="col-md-6">
+                        <p class="name">台北馬偕醫院</p>
+                        <h4>標題標題標題標題標題標題標題標題</h4>
+                        <p>說明文字說明文字，說明文字說明文字，說明文字說明文字，說明文字說明文字，說明文字說明文字。</p>
+                        <h5><a href="" class="pre-btn">看更多</a></h5>
+                      </div>
+                    </div>
+                    <div class="row item">
+                      <div class="col-md-6">
+                        <img src="assets/images/test.jpg" alt="">
+                      </div>
+                      <div class="col-md-6">
+                        <p class="name">高雄長庚醫院</p>
+                        <h4>標題標題標題標題標題標題標題標題</h4>
+                        <p>說明文字說明文字，說明文字說明文字，說明文字說明文字，說明文字說明文字，說明文字說明文字。</p>
+                        <h5><a href="" class="pre-btn">看更多</a></h5>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -553,6 +698,10 @@
         $('#' + $(this).val()).show();
       });
       $('#colorselector2').change(function () {
+        $('.colors').hide();
+        $('#' + $(this).val()).show();
+      });
+      $('#colorselector3').change(function () {
         $('.colors').hide();
         $('#' + $(this).val()).show();
       });
