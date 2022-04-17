@@ -813,6 +813,7 @@ section {
 			@include mobile {
 				font-size: 20px;
 				line-height: 1.5;
+				margin-bottom: 20px;
 			}
 		}
 		h5 {
@@ -839,8 +840,12 @@ section {
 		padding-top: 62%;
 	}
 	@include mobile {
-		// background-image: url(../images/form1-mb.svg);
-		// height: 364px;
+		background-size: 110% auto ;
+		&:before {
+			content: "";
+			display: block;
+			padding-top: 70%;
+		}
 	}
 }
 .s2-img1 {
@@ -855,7 +860,12 @@ section {
 		padding-top: 56%;
 	}
 	@include mobile {
-
+		background-size: 100% auto ;
+		&:before {
+			content: "";
+			display: block;
+			padding-top: 80%;
+		}
 	}
 }
 .s2-img2 {
@@ -870,7 +880,12 @@ section {
 		padding-top: 56%;
 	}
 	@include mobile {
-
+		background-size: 100% auto ;
+		&:before {
+			content: "";
+			display: block;
+			padding-top: 80%;
+		}
 	}
 }
 
@@ -878,13 +893,17 @@ section {
 #disease {
 	.disease-card {
 		padding:30px 30px 20px;
+		margin-bottom: 30px;
 		border-radius: 10px;
 		background-color: $color-second-light;
 		color: #fff;
-		&:nth-child(3) {
+		@include mobile {
+			padding: 20px 20px 16px;	
+		}
+		&.disease-card2 {
 			background-color: #3EB08C;
 		}
-		&:nth-child(4) {
+		&.disease-card3 {
 			background-color: #8671AA;
 			p {
 				a {
@@ -893,10 +912,10 @@ section {
 				}
 			}
 		}
-		&:nth-child(5) {
+		&.disease-card4 {
 			background-color: #A8AF04;
 		}
-		&:nth-child(6) {
+		&.disease-card5 {
 			background-color: #4894D0;
 		}
 		.disease-icon-block {
@@ -910,6 +929,16 @@ section {
 			.disease-icon {
 				width: 70%;
 				margin: 0 auto 14px;
+			}
+			@include mobile {
+				h3 {
+					margin-bottom: 20px;
+				}
+				.disease-icon {
+					width:auto ;
+					height: 130px;
+					margin-bottom: 10px;
+				}
 			}
 		}
 		.disease-text-block {
@@ -953,3 +982,131 @@ section {
 	}
 }
 
+
+// ---------- check-block ----------
+.check-block {
+	.table-block {
+		margin-top:50px;
+		@include mobile {
+			padding:0;
+		}
+	}
+	.thead {
+		background-color: $color-light;
+		color:#fff;
+		text-align:center;
+		padding:10px 20px;
+		font-weight: 400;
+		letter-spacing: 2px;
+	}
+	table {
+		font-size: 18px;
+		font-weight: 300;
+		tbody {
+			tr {
+				th {
+					padding:16px 30px;
+					width: 20%;
+					border-right: 1px solid $color-light;
+					border-bottom: 1px solid $color-light;
+					background-color: #EFEFEF;
+					text-align: center;
+					color:$color;
+					font-weight: 300;
+					@include mobile {
+						width: 94px;
+						padding: 16px 10px 16px 16px;
+					}
+				}
+				td {
+					padding:16px 30px;
+					border-bottom: 1px solid $color-light;
+					font-weight: 200;
+					@include mobile {
+						padding: 16px 10px 16px 16px;
+						line-height: 1.5;
+					}
+				}
+			}
+		}
+
+	}
+	.thead2 {
+		background-color: $color-second;
+		margin-top: 40px;
+	}
+	.table2 {
+		th {
+			border-right: 1px solid $color-second-light;
+			border-bottom: 1px solid $color-second-light;
+			color:$color-second;
+		}
+		td {
+			border-bottom: 1px solid $color-second-light;
+		}
+	}
+
+	.check-card-title {
+		margin-top: 80px;
+		margin-bottom: 50px;
+		h3 {
+			margin-bottom: 30px;
+			text-align:center;
+		}
+		@include mobile {
+			margin-bottom: 30px;
+		}
+	}
+	.check-card {
+		padding: 30px 30px 20px;
+		border-radius: 10px;
+		background-color: $color-second-light;
+		&.check-card2 {
+			background-color: $color-light;
+		}
+		img {
+			height: 120px;
+			display: block;
+			margin: auto;
+			margin-bottom: 20px;
+		}
+		h4 {
+			text-align: center;
+			margin-bottom: 15px;
+		}
+		p {
+			font-size: 17px;
+			line-height: 1.6;
+		}
+		h6 {
+			text-align:right;
+			margin-top: 18px;
+			a {
+				color: #fff;
+				transition: .3s;
+				&:hover {
+				color: #333;
+				}
+			}
+		}
+		@include mobile {
+			padding: 15px 15px 10px;
+			margin-bottom: 30px;
+		}
+	}
+
+}
+
+// ---------- other-block ----------
+.other-block {
+	.other-link {
+		padding:0 20px;
+		img {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		h4 {
+			margin-bottom: 10px;
+		}
+	}
+}
