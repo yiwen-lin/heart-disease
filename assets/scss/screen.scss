@@ -829,7 +829,7 @@ section {
 }
 
 .s1-img {
-	background-image: url(/assets/images/chart1.svg);
+	background-image: url(../images/chart1.svg);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -849,7 +849,7 @@ section {
 	}
 }
 .s2-img1 {
-	background-image: url(/assets/images/chart2.svg);
+	background-image: url(../images/chart2.svg);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -869,7 +869,7 @@ section {
 	}
 }
 .s2-img2 {
-	background-image: url(/assets/images/chart3.svg);
+	background-image: url(../images/chart3.svg);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -888,6 +888,7 @@ section {
 		}
 	}
 }
+
 
 // ---------- disease ----------
 #disease {
