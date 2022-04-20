@@ -1121,6 +1121,7 @@ section {
 		padding:0 20px;
 		a {
 			color: #000;
+			transition: .3s;
 		}
 		img {
 			width: 100%;
@@ -1128,6 +1129,16 @@ section {
 		}
 		h4 {
 			margin-bottom: 10px;
+		}
+		// &:hover {
+		// 	a {
+		// 		color: $color-second;
+		// 	}
+		// }
+	}
+	@include mobile {
+		.other-link+.other-link {
+			margin-top: 30px;
 		}
 	}
 }
