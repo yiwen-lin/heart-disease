@@ -1,3 +1,5 @@
+var width = $(window).width();
+
 $('.navbar .nav-link').click(function () {
   //手機版 nav click 收合
   if($(window).innerWidth() <= 769) {
@@ -6931,8 +6933,14 @@ $(document)
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
         if (target.length) {
+          let headerOffset = 56;
+          if ( width >=  992 ) {
+            headerOffset = 70;
+          } else {
+            headerOffset = 56;
+          }
           $('html, body').animate({
-            scrollTop: (target.offset().top)
+            scrollTop: (target.offset().top - headerOffset)
           }, 1000);
           // return false;
         }

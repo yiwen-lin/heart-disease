@@ -25,9 +25,8 @@ body {
 		background-color: #FFB7B4;
 	}
 	&.noscroll {
-		position: fixed;
-		width: 100%;
-		overflow-y: scroll;
+		height: 100%;
+		overflow: hidden;
 	}
 }
 
@@ -235,7 +234,7 @@ img.title-icon {
 
 // ----------question test----------
 #test {
-	height: calc(100vh - 70px) ;
+	height: calc(100vh - 70px);
 	align-items: center;
 	.outer {
 		margin: auto;
@@ -243,6 +242,15 @@ img.title-icon {
 		justify-content: center;
 		align-items: center; 
 		height: 100%;
+		&:first-child {
+			.pre-btn {
+				display: none;
+			}
+		}
+	}
+	.test-inner {
+		height: 100%;
+		overflow: hidden;
 	}
 	.inner{
 		height: 100%;
@@ -260,24 +268,24 @@ img.title-icon {
 	}
 
 	.test-btn {
+		display: block;
+		width: 100%;
 		border: 1px solid $color;
 		border-radius: 10px;
+		color:$color;
 		background-color: #fff;
-		padding:12px 40px;
+		padding: 12px 40px;
+		line-height: 1.75;
 		text-align:center;
 		font-size: 18px;
 		font-weight: 300;
 		margin: 20px auto;
 		transition: .3s;
 		cursor: pointer;
+		outline: 0;
 		&:hover {
 			background-color: #C6F7F7;
 		}
-		a {
-			display: block;
-			color:$color;
-		}
-
 	}
 	@include mobile {
 		height: calc(100vh - 56px) ;
@@ -289,9 +297,28 @@ img.title-icon {
 
 }
 
+.pre-btn {
+	padding: 0;
+	color: #666;
+	font-size: 16px;
+	display: inline-block;
+	margin-top: 25px;
+	font-weight: 300;
+	line-height: 1.5;
+	letter-spacing: 2px;
+	background-color: transparent;
+	border: 0;
+	border-bottom: 1px solid #666;
+	transition: .3s;
+	outline: 0;
+	&:focus {
+		outline: 0;
+	}
+}
+
 // ----------result----------
 #resultSection {
-	// display: none;
+	display: none;
 }
 .result-block {
 	// display: none;
@@ -365,7 +392,7 @@ img.title-icon {
 		text-align: center;
 		margin: auto;
 		margin-top: 70px;
-		h5 {
+		.pre-btn {
 			margin-right: 20px;
 		}
 		.general-btn-block {
@@ -373,7 +400,7 @@ img.title-icon {
 		}
 		@include mobile {
 			margin-top: 0px;
-			h5 {
+			.pre-btn {
 				margin-right: 0;
 				margin-bottom: 30px;
 			}

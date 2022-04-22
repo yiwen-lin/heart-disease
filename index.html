@@ -87,7 +87,7 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link smooth-scroll" href="#test">心血管疾病檢測器</a>
+            <a id="playTest" class="nav-link smooth-scroll" href="#test">心血管疾病檢測器</a>
           </li>
           <li class="nav-item">
             <a class="nav-link smooth-scroll" href="#feature">特色團隊</a>
@@ -133,16 +133,7 @@
 
   <!-- 測驗 -->
   <section id="test">
-    <div class="container outer">
-      <div class="row">
-        <div class="inner">
-          <h3>下面兩種症狀，您屬於哪一種？</h3>
-          <div class="test-btn"><a href="">突然胸痛</a></div>
-          <div class="test-btn"><a href="">安靜時突然覺得心臟砰砰跳（運動或興奮時除外）</a></div>
-          <h5><a href="" class="pre-btn">回上一題</a></h5>
-        </div>
-      </div>
-    </div>
+    <div class="test-inner"></div>
   </section>
 
   <!-- 測驗結果 -->
@@ -155,28 +146,10 @@
             <p>此為預測結果，正確診斷仍須接受醫師的問診檢查</p>
           </div>
           <div class="disease-block">
-            <div class="result-circle">
-              <a href="" target="_blank">
-                <div class="disease-name">心包膜炎</div>
-                <h6>認識疾病 →</h6>
-              </a>
-            </div>
-            <div class="result-circle">
-              <a href="" target="_blank">
-                <div class="disease-name">心包膜炎</div>
-                <h6>認識疾病 →</h6>
-              </a>
-            </div>
-            <div class="result-circle">
-              <a href="" target="_blank">
-                <div class="disease-name">肌筋膜痛症候群</div>
-                <h6>認識疾病 →</h6>
-              </a>
-            </div>
           </div>
 
           <div class="btn-block">
-            <h5><a href="" class="pre-btn" data-category="web_web" data-action="2022CVD" data-label="click-test-again">再測一次</a></h5>
+            <button id="test-again" class="pre-btn" data-category="web_web" data-action="2022CVD" data-label="click-test-again">再測一次</button>
             <div class="general-btn-block">
               <div class="general-btn"><a href="#feature" class="smooth-scroll" data-action="2022CVD" data-label="click-test-hospital">找醫院團隊</a></div>
               <div class="general-btn"><a href="knowledge.html" data-action="2022CVD" data-label="click-test-disease">認識疾病</a></div>
@@ -669,32 +642,27 @@
   <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
-  <!-- <script src="assets/js/game.js"></script> -->
+  <script src="assets/js/game.js"></script>
   <script src="assets/js/hospital.js"></script>
 
   <script>
-
-
-
-
-
     $(function () {
       $('#red').show();
       $('#colorselector').change(function () {
-        $('.colors').hide();
-        $('#' + $(this).val()).show();
+        $('#home .colors').hide();
+        $('#home #' + $(this).val()).show();
       });
 
       $('#red2').show();
       $('#colorselector2').change(function () {
-        $('.colors').hide();
-        $('#' + $(this).val()).show();
+        $('#menu1 .colors').hide();
+        $('#menu1 #' + $(this).val()).show();
       });
 
       $('#red3').show();
       $('#colorselector3').change(function () {
-        $('.colors').hide();
-        $('#' + $(this).val()).show();
+        $('#menu4 .colors').hide();
+        $('#menu4 #' + $(this).val()).show();
       });
     });
   </script>
