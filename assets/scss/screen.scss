@@ -702,6 +702,7 @@ img.title-icon {
 			justify-content: center;
 			@include mobile {
 				margin: 20px -15px 30px;
+				overflow: hidden;
 			}
 			li {
 				letter-spacing: 2px;
