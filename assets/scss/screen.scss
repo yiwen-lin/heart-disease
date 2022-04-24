@@ -238,12 +238,14 @@ img.title-icon {
 #test {
 	height: calc(100vh - 70px);
 	align-items: center;
+	padding:0;
 	.outer {
 		margin: auto;
 		display: flex;
 		justify-content: center;
 		align-items: center; 
-		height: 100%;
+		height: 100vh;
+		
 		&:first-child {
 			.pre-btn {
 				display: none;
@@ -290,20 +292,21 @@ img.title-icon {
 		}
 	}
 	@include mobile {
-		// height: calc(100vh - 56px) ;
-		height: 100vh;
-		padding: 0;
+		height: calc(100vh - 56px) ;
+		// height: 100vh;
+		// padding: 0;
 
 		h3 {
-			font-size: 20px;
-			margin-bottom: 30px;
+			font-size: 18px;
+			margin-bottom: 24px;
 		}
 		.test-btn {
 			font-size: 17px;
+			padding: 12px 20px;
 		}
 		.outer {
-			display: flex;
-			height: 100vh;
+			// display: flex;
+			// height: 100vh;
 		}
 	}
 }
@@ -693,7 +696,7 @@ img.title-icon {
 			align-items: center;
 			justify-content: center;
 			@include mobile {
-				margin: 20px auto 30px;
+				margin: 20px -15px 30px;
 			}
 			li {
 				letter-spacing: 2px;
@@ -786,7 +789,7 @@ img.title-icon {
 	display: block;
 	@include mobile {
 		font-size: 16px;
-		padding: 8px 16px;
+		padding: 8px 14px;
 		margin: 0 12px;
 	}
 }
