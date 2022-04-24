@@ -363,7 +363,7 @@ function backPrev(val) {
 	let outerHeight = $('#test .outer').height();
 	$('#test .test-inner').animate({
 		scrollTop: (index-1) * outerHeight
-	}, 500);
+	}, 0);
 }
 
 function resetTest() {
@@ -397,7 +397,7 @@ $('#test .test-btn').click(function() {
 	if ( next !== 'end' ) {
 		$('#test .test-inner').animate({
 			scrollTop: (index-1) * outerHeight
-		}, 500);
+		}, 0);
 	} else {
 		goResult(result);
 	}
