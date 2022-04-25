@@ -193,7 +193,7 @@ img.title-icon {
 
 
 @include mobile {
-	body.noscroll {
+	html, body {
 		height: 100%;
 		min-height: 100%;
 	}
@@ -206,20 +206,25 @@ img.title-icon {
 		background-image:url(../images/kv-mb.gif);
 		background-repeat: no-repeat;
 		background-size: cover;
-		background-position: center top;
+		background-position: center;
 		.container {
 			height: 100%;
 			padding-top: 40px;
 			padding-bottom: 40px;
-			overflow: scroll;
+			// overflow: scroll;
 			// overflow: auto;
     		//-webkit-overflow-scrolling: touch;
 			// bottom:10vh;
+			.row {
+				height: 100%;
+				align-items: flex-end;
+			}
 		}
 
 		.op-text {
 			position: relative;
-			margin-top: 60vh;
+			bottom: auto;
+			// margin-top: 60vh;
 			//margin-top: 30px;
 			// h4 {
 			// 	font-size: 18px;
