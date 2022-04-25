@@ -1138,9 +1138,9 @@ section {
 	.check-card {
 		padding: 30px 30px 20px;
 		border-radius: 10px;
-		background-color: $color-second-light;
+		background-color: #ccc;
 		&.check-card2 {
-			background-color: $color-light;
+			background-color: $color-second-light;
 		}
 		img {
 			height: 120px;
