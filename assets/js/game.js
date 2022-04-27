@@ -91,7 +91,7 @@ const quiz = [
 		prev: 'test-q1',
 		option: [
 			{
-				content: '有火燒心、胃不適症狀，喝水吃胃藥就可緩解',
+				content: '有火燒心、胃不適症狀，喝水、吃胃藥就可緩解',
 				track: 'test-q2-a',
 				next: 'end',
 				result: 'result-a',
@@ -111,12 +111,12 @@ const quiz = [
 		],
 	},
 	{
-		title: '下列 3 種情況，哪一種比較符合你：',
+		title: '下列三種情況，哪一種比較符合你？',
 		id: 'test-q3',
 		prev: 'test-q2',
 		option: [
 			{
-				content: '吸氣、吐氣會痛，痛的地方手指得出來',
+				content: '吸氣、吐氣時，胸部會痛，痛的地方手指得出來',
 				track: 'test-q3-a',
 				next: 'end',
 				result: 'result-c',
@@ -128,7 +128,7 @@ const quiz = [
 				result: 'result-d'
 			},
 			{
-				content: '疼痛部位不明確，左肩、左手腕或胃、背部也同時會痛；且腳在運動時就痛，休息就會好說間持續約 1~15 分鐘',
+				content: '疼痛部位不明確，左肩、左手腕或胃、背部也同時會痛；且腳在運動時就痛，休息就會好，時間持續約 1~15 分鐘',
 				track: 'test-q3-c',
 				next: 'end',
 				result: 'result-e'
@@ -178,7 +178,7 @@ const quiz = [
 				result: null
 			},
 			{
-				content: '60~不規則',
+				content: '不規則',
 				track: 'test-q5-b',
 				next: 'end',
 				result: 'result-h'
@@ -197,7 +197,7 @@ const quiz = [
 				result: null
 			},
 			{
-				content: '60~不規則',
+				content: '不規則',
 				track: 'test-q6-b',
 				next: 'end',
 				result: 'result-h'
@@ -205,7 +205,7 @@ const quiz = [
 		],
 	},
 	{
-		title: '下列 2 種情況，哪一種較符合你？',
+		title: '下列兩種情況，哪一種較符合你？',
 		id: 'test-q7',
 		prev: 'test-q5',
 		option: [
@@ -216,7 +216,7 @@ const quiz = [
 				result: 'result-i'
 			},
 			{
-				content: '突然發生瞬間緩解',
+				content: '突然發生，瞬間緩解',
 				track: 'test-q7-b',
 				next: 'end',
 				result: 'result-j'
@@ -224,7 +224,7 @@ const quiz = [
 		],
 	},
 	{
-		title: '下列 2 種情況，哪一種較符合你？',
+		title: '下列兩種情況，哪一種較符合你？',
 		id: 'test-q8',
 		prev: 'test-q6',
 		option: [

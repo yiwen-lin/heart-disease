@@ -765,6 +765,15 @@ img.title-icon {
 	}
 }
 
+// ----------img-block ----------
+.img-block {
+	background-color: #fff;
+	.adimg-block {
+		margin: auto;
+		text-align: center;
+	}
+}
+
 // ----------symptom feature ----------
 
 .symptom-block {
@@ -791,6 +800,9 @@ img.title-icon {
 				opacity: 1;
 			}
 		}
+		.tab-pane-h4 {
+			margin-bottom:10px;
+		}
 		.option-group {
 			select {
 				font-size: 17px;
@@ -801,12 +813,12 @@ img.title-icon {
 				}
 			}
 			.output {
-				margin-top: 20px;
+				margin-top: 30px;
 				.colors {
 					display: none;
 				}
 				p {
-					color: #555;
+					// color: #555;
 				}
 			}
 		}
@@ -814,6 +826,17 @@ img.title-icon {
 			font-size: 20px;
 			font-weight: 200;
 			margin: 0px auto 10px;
+		}
+		.read-btn {
+			color: #333;
+			display: block;
+			transition: .3s;
+			&:hover {
+				h4 {
+					color: $color;
+				}
+
+			}
 		}
 		.item {
 			margin-bottom: 50px;
@@ -827,13 +850,17 @@ img.title-icon {
 				font-weight: 500;
 				color:$color;
 				margin-bottom: 14px;
+				color:$color;
 			}
 			h4 {
+				transition: .3s;
 				margin-bottom: 4px;
 			}
 			h5{
 				position: absolute;
 				right: 20px;
+				color:#555;
+				border-bottom: 1px solid #555;
 			}
 			@include mobile {
 				margin-bottom: 40px;
@@ -846,6 +873,7 @@ img.title-icon {
 					display: block;
 					text-align:right;
 					margin-top: 10px;
+					border-bottom: none;
 				}
 			}
 		}
@@ -962,6 +990,12 @@ section {
 			margin-top: 30px;
 			font-weight: 200;
 			display: block;
+		}
+	}
+	.info-block+.info-block {
+		margin-top: 100px;
+		@include mobile {
+			margin-top: 70px;
 		}
 	}
 	.concatenate {
@@ -1203,7 +1237,8 @@ section {
 	.check-card {
 		padding: 30px 30px 20px;
 		border-radius: 10px;
-		background-color: #ccc;
+		background-color: #acacac;
+		color:#fff;
 		&.check-card2 {
 			background-color: $color-second-light;
 		}
@@ -1225,10 +1260,10 @@ section {
 			text-align:right;
 			margin-top: 18px;
 			a {
-				color: #fff;
+				color: #333;
 				transition: .3s;
 				&:hover {
-				color: #333;
+				color: #000;
 				}
 			}
 		}
