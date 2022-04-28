@@ -2,7 +2,7 @@ var width = $(window).width();
 
 $('.navbar .nav-link').click(function () {
   //手機版 nav click 收合
-  if($(window).innerWidth() <= 769) {
+  if($(window).innerWidth() <= 820) {
     $('.navbar-toggler').trigger('click');
   }
 });
