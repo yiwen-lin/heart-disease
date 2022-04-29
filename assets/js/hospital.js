@@ -1026,4 +1026,11 @@ $(document)
     // 生成table
     showResultTable(answer);
   })
+  // 點擊頁面後，頁面將滑動至表格頂端
+  .on('click', '.paginate_button', function(e){
+    $('html, body').animate({
+      scrollTop: $(".dataTables_wrapper").offset().top - 56
+      }, 'slow');
+  })
+
 
