@@ -14,7 +14,7 @@ $color-second-light: #F39B97;
 
 
 body {
-	background-color: #FCFCFC;
+	background-color: #fff;
     font-family: 'roboto', 'source-han-sans-traditional', sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -751,6 +751,7 @@ img.title-icon {
 		button {
 			margin-top: 20px;
 			margin-left: 0;
+			padding: 8px 12px;
 		}
 	}
 
@@ -827,6 +828,13 @@ img.title-icon {
 		img {
 			width: 100%;
 		}
+	}
+}
+.result-block {
+	
+	.img-block {
+		padding-top: 100px;
+		background-color:transparent;
 	}
 }
 
@@ -930,6 +938,11 @@ img.title-icon {
 					margin-top: 10px;
 					float: right;
 					border-bottom: 1px solid #000;
+				}
+			}
+			@media only screen and (min-device-width : 768px) and (max-device-width : 1023px)  {
+				.name {
+					margin-top: -5px;
 				}
 			}
 		}

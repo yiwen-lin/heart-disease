@@ -186,21 +186,21 @@
             </div>
           </div>
 
+          <div class="col-12 col-md-6 offset-md-3">
+            <div class="img-block">
+                <div class="adimg-block">
+                  <a href="" target="_blank"><img src="https://as.chdev.tw/web/article/photos/1/6/5/7465e95de5bcab62422420ff6bb3cf43619fb4ef.jpeg" alt=""></a>
+                </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
   </section>
 
 
-<section class="img-block">
-  <div class="container">
-  <div class="col-12">
-    <div class="adimg-block">
-      <a href="" target="_blank"><img src="https://as.chdev.tw/web/article/photos/1/6/5/7465e95de5bcab62422420ff6bb3cf43619fb4ef.jpeg" alt=""></a>
-    </div>
-  </div>
-</div>
-</section>
+
 
   <!--symptom feature-->
   <section class="symptom-block" id="feature" data-category="web_web" data-action="2022CVD"
@@ -215,7 +215,7 @@
       </div>
 
       <div class="row">
-        <div class="col-12 col-md-10 offset-md-1">
+        <div class="col-12 col-md-12">
           <ul class="nav nav-pills" role="tablist">
             <li><a class="active" data-toggle="pill" href="#home" role="tab" aria-controls="home" aria-selected="true"
                 data-category="web_web" data-action="2022CVD" data-label="click-test-hospital1">冠狀動脈心臟病</a>
@@ -231,7 +231,9 @@
             <li><a data-toggle="pill" href="#menu4" role="tab" aria-controls="menu4" aria-selected="false"
                 data-category="web_web" data-action="2022CVD" data-label="click-test-hospital5">心律不整</a></li>
           </ul>
+        </div>
 
+        <div class="col-12 col-md-10 offset-md-1">
           <div class="tab-content">
             <!-- tab1 -->
             <div id="home" class="tab-pane fade in active">
@@ -636,10 +638,10 @@
     <div class="container">
       <div class="row">
 
-        <div class="col-md-2 offset-md-2">
+        <div class="col-lg-2 offset-lg-2 col-md-3 offset-md-1">
           <div class="link-title"> 認識疾病 →</div>
         </div>
-        <div class="col-md-6">
+        <div class="col-lg-6 col-md-8">
           <a href="https://web.commonhealth.com.tw/2022CVD/knowledge.html" target="_blank">關鍵數據｜為什麼愈來愈多台灣人罹患心血管疾病？</a>
           <a href="https://web.commonhealth.com.tw/2022CVD/knowledge.html#disease" target="_blank">疾病介紹｜5大類心血管疾病，有什麼徵兆？</a>
           <a href="https://web.commonhealth.com.tw/2022CVD/knowledge.html#check" target="_blank">心臟健檢｜初階、進階心臟檢查，我可以怎麼選？</a>
@@ -663,35 +665,43 @@
   <section class="search-block" id="hospital" data-category="web_web" data-action="2022CVD"
     data-label="section-finding">
     <div class="container">
-      <div class="col-12 col-md-8 offset-md-2">
-        <h2><img class="title-icon" src="assets/images/icon.svg" alt="">找醫院</h2>
-        <p>由健保署提供全台心血管疾病相關診治醫療院所，詳細地址、聯絡方式歡迎民眾查找使用。</p>
-      </div>
-      <select name="select_city" id="city" class="col-12 col-md-2">
-        <option value="" selected>選擇縣市</option>
-      </select>
-      <select name="select_area" id="area" class="col-12 col-md-2">
-        <option value="" selected>選擇區域</option>
-      </select>
-      <input placeholder="手術式名稱（非必填）" id="info" class="col-12 col-md-2">
-      <input placeholder="輸入醫院名稱" id="search_name" class="col-12 col-md-2">
-      <button id="gosearch" class="col-12 col-md-2" data-category="web_web" data-action="2022CVD"
-        data-label="click-search-hospital">找醫院</button>
-      <div class="show_result">
-        <table id="result">
-          <thead>
-            <tr>
-              <td>醫院／診所</td>
-              <td>電話</td>
-              <td>地址</td>
-              <td>手術式名稱</td>
-            </tr>
-          </thead>
-          <tbody>
-          </tbody>
-        </table>
-      </div>
+      <div class="row">
+        <div class="col-12 col-md-8 offset-md-2">
+          <h2><img class="title-icon" src="assets/images/icon.svg" alt="">找醫院</h2>
+          <p>由健保署提供全台心血管疾病相關診治醫療院所，詳細地址、聯絡方式歡迎民眾查找使用。</p>
+        </div>
+
+        <div class="col-12">
+          <select name="select_city" id="city" class="col-12 col-md-2">
+            <option value="" selected>選擇縣市</option>
+          </select>
+          <select name="select_area" id="area" class="col-12 col-md-2">
+            <option value="" selected>選擇區域</option>
+          </select>
+          <input placeholder="手術式名稱（非必填）" id="info" class="col-12 col-md-2">
+          <input placeholder="輸入醫院名稱" id="search_name" class="col-12 col-md-2">
+          <button id="gosearch" class="col-12 col-md-2" data-category="web_web" data-action="2022CVD"
+            data-label="click-search-hospital">找醫院</button>
+            
+          <div class="show_result">
+            <table id="result">
+              <thead>
+                <tr>
+                  <td>醫院／診所</td>
+                  <td>電話</td>
+                  <td>地址</td>
+                  <td>手術式名稱</td>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+      
+        </div>
       <!-- <h6>*僅羅列口碑推薦名單，未能涵蓋所有優秀醫療院所，敬請見諒</h6> -->
+
+      </div>
     </div>
   </section>
 
@@ -699,7 +709,7 @@
     <section id="publication" class="publication">
       <div class="container">
         <div class="col-12 col-md-8 offset-md-2">
-          <h2><img class="title-icon" src="assets/images/icon.svg" alt="">推薦好物</h2>
+          <h2><img class="title-icon" src="assets/images/icon.svg" alt="">推薦好書</h2>
         </div>
       </div>
       <div class="container">
